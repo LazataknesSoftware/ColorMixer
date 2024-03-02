@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ColorMixer</title>
+		<style>
+		    div > * {
+		        display:inline-block;
+		        margin-right:20px;
+		    }
+		    * {
+		        background-color: black;
+		        color:white;
+		        font-family: arial;
+		    }
+		    input {
+		        background-color:gray;
+		    }
+		    body > button {
+		        display:inline-block;
+		        margin-right:10px;
+		    }
+		    button[onclick="mixColors()"] {
+		        color:lime;
+		    }
+		    #result {
+		    	--r: "";
+		    	--g: "";
+		    	--b: "";
+		    	background-color: rgb(var(--r),var(--g),var(--b));
+		    	width: 200px;
+		    	height: 100px;
+		    	border: 3px solid gray;
+		    }
+		</style>
+		<script>
+		    var ci = "", cr = "",cd = [], cg = [], cR = 0, cG = 0, cB = 0;
+		    function addInput() {
+		        ci = document.createElement("input");
+		        ci.type = "color";
+		        document.querySelector("body div").appendChild(ci);
+		    }
+		    function deleteInput() {
+		        document.querySelector("body div").removeChild(document.querySelector("body div").children[document.querySelector("body div").children.length-1]);
+		    }
+		    function mixColors() {
+		        cd = [], cg = [], cR = 0, cG = 0, cB = 0;
+		        for (var ca = 0; ca < document.querySelector("body div").children.length; ca++) {
+		            cd.push(document.querySelector("body div").children[ca].value); // COLORCODE
+		        }
+		        for (var cx = 0; cx < cd.length; cx++) {
+		            cg.push(cd[cx].replace("#","")); // HEX
+		        }
+    		    for (var cD2 = 0; cD2 < cg.length; cD2++) {
+    		    	cR = cR + parseInt(cg[cD2].substr(0,2),16);
+    		    	cG = cG + parseInt(cg[cD2].substr(2,2),16);
+    		    	cB = cB + parseInt(cg[cD2].substr(4,2),16); 
+    		    }
+    		    document.getElementById("result").style.setProperty("--r",Math.floor(cR/document.querySelector("body div").children.length));
+    		    document.getElementById("result").style.setProperty("--g",Math.floor(cG/document.querySelector("body div").children.length));
+    		    document.getElementById("result").style.setProperty("--b",Math.floor(cB/document.querySelector("body div").children.length));
+    		    document.getElementById("colorscheme").innerText = `${document.getElementById("result").style.getPropertyValue("--r")}, ${document.getElementById("result").style.getPropertyValue("--g")}, ${document.getElementById("result").style.getPropertyValue("--b")} = #${parseInt(document.getElementById("result").style.getPropertyValue("--r")).toString(16).length === 2 ? parseInt(document.getElementById("result").style.getPropertyValue("--r")).toString(16).toUpperCase() : 0 + parseInt(document.getElementById("result").style.getPropertyValue("--r")).toString(16).toUpperCase()}${parseInt(document.getElementById("result").style.getPropertyValue("--g")).toString(16).length === 2 ? parseInt(document.getElementById("result").style.getPropertyValue("--g")).toString(16).toUpperCase() : 0 + parseInt(document.getElementById("result").style.getPropertyValue("--g")).toString(16).toUpperCase()}${parseInt(document.getElementById("result").style.getPropertyValue("--b")).toString(16).length === 2 ? parseInt(document.getElementById("result").style.getPropertyValue("--b")).toString(16).toUpperCase() : 0 + parseInt(document.getElementById("result").style.getPropertyValue("--b")).toString(16).toUpperCase()}`
+		    }
+		</script>
+	</head>
+	<body>
+	    <button onclick="addInput()">Добавить</button>
+	    <button onclick="deleteInput()">Удалить (последний)</button>
+	    <button onclick="mixColors()">Смешать</button>
+	    <hr>
+		<div>
+		    <input type="color">
+		</div>
+		<hr>
+		Результат:<br><br>
+		<div id="result"></div><br>
+		<span id="colorscheme"></span>
+	</body>
+</html>
