@@ -9,20 +9,18 @@
 		        display:inline-block;
 		        margin-right:20px;
 		    }
-		    * {
-		        background-color: black;
-		        color:white;
-		        font-family: arial;
+		    *:not(button) {
+		        font-family: system-ui;
 		    }
-		    input {
-		        background-color:gray;
+		    hr + div:first-child {
+		    	margin-right: 5px;
 		    }
 		    body > button {
 		        display:inline-block;
 		        margin-right:10px;
 		    }
 		    button[onclick="mixColors()"] {
-		        color:lime;
+		        background-color:lime;
 		    }
 		    #result {
 		    	--r: "";
