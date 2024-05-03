@@ -1,7 +1,17 @@
-**ColorMixer** is a program written in HTML, CSS and JS. It is fully works in browser.
+# Features
+:star: Program works fully in browser.
+
+:star: **It hosted on GitHub Pages**. It means you can access ColorMixer from any device.
+
+:star: Simple UI
+
+:star: **All-in-one.** It means HTML-code, page styles and JavaScript code (saying `program data` for usual user) included in one HTML-file. It is very good when you want to make offline copy of ColorMixer.
+
+:star: Result is RGB and HEX-code.
+
+# Known problems 
+:frowning_face: Button "Mix" and "Remove (last) don't disable even when the last color was deleted.
 
 ---
 
-**TODO**:
-
-* Translate application in English
+**If you face problems while using ColorMixer, then make an issue!**
