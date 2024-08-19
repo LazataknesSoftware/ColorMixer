@@ -35,6 +35,9 @@
 		</style>
 		<script>
 		    var ci = "", cr = "",cd = [], cg = [], cR = 0, cG = 0, cB = 0;
+			window.onload = function() {
+				this.resizeTo(500,350)
+			}
 		    function addInput() {
 		        ci = document.createElement("input");
 		        ci.type = "color";
