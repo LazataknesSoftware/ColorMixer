@@ -9,8 +9,7 @@
 
 :star: Result is RGB and HEX-code.
 
-# Known problems 
-:frowning_face: Button "Mix" and "Remove (last) don't disable even when the last color was deleted.
+:star: You can set light and dark mode!
 
 ---
 
