@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="theme-color" content="#ffffff" id="when_mode">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="colormixer.ico">
 		<title>ColorMixer</title>
@@ -77,6 +78,7 @@ button:disabled {
 				function setMode() {
 					val = document.getElementById("app_mode").value
 					if (val == "light") {
+						document.querySelector("#when_mode").content = "#ffffff"
 						document.querySelector("*:not(button[onclick=\"mixColors()\"])").style.backgroundColor = "white"
 						document.querySelector("*:not(button[onclick=\"mixColors()\"])").style.color = "black"
 						document.querySelectorAll("button:not(button[onclick=\"mixColors()\"])").forEach(b=>b.style.backgroundColor = "#f5f5f5")
@@ -85,6 +87,7 @@ button:disabled {
 						document.querySelector("button[onclick=\"mixColors()\"]").style.backgroundColor = "lime"
 						document.querySelector("button[onclick=\"mixColors()\"]").style.color = "black"
 					} else if (val == "dark") {
+						document.querySelector("#when_mode").content = "#000000"
 						document.querySelector("*:not(button[onclick=\"mixColors()\"])").style.backgroundColor = "black"
 						document.querySelector("*:not(button[onclick=\"mixColors()\"])").style.color = "white"
 						document.querySelectorAll("button:not(button[onclick=\"mixColors()\"])").forEach(b=>b.style.backgroundColor = "#555555")
