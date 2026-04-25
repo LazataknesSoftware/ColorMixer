@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 	<head>
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#ffffff" id="when_mode">
@@ -7,9 +7,9 @@
 		<link rel="icon" href="colormixer.ico">
 		<title>ColorMixer</title>
 		<style>
-button:disabled {
-	display: none;
-}
+				button:disabled {
+					display: none;
+				}
 		    div > * {
 		        display:inline-block;
 		        margin-right:20px;
@@ -99,19 +99,19 @@ button:disabled {
 		</script>
 	</head>
 	<body>
-	    <button onclick="addInput()">Add</button>
-	    <button onclick="deleteInput()">Delete (last)</button>
-	    <button onclick="mixColors()">Mix</button>
+	    <button onclick="addInput()">Добавить</button>
+	    <button onclick="deleteInput()">Удалить (последний) цвет</button>
+	    <button onclick="mixColors()">Смешать</button>
 			<select id="app_mode" onchange="setMode()">
-				<option value="light">Light</option>
-				<option value="dark">Dark</option>
+				<option value="light">Светлый</option>
+				<option value="dark">Темный</option>
 			</select>
 	    <hr>
 		<div>
 		    <input type="color">
 		</div>
 		<hr>
-		Result:<br><br>
+		Результат:<br><br>
 		<div id="result"></div><br>
 		<span id="colorscheme"></span>
 	</body>
