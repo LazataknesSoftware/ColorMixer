@@ -1,16 +1,15 @@
-# Features
-:star: Program works fully in browser.
+# Преимущества
+:star: **Полностью работает в браузере.** Никаких проблем с библиотеками или с путями - всё работает сразу!
 
-:star: **It hosted on GitHub Pages**. It means you can access ColorMixer from any device.
+:star: **Расположен на GitHub Pages**. Не надо ничего загружать - нужен только браузер!
 
-:star: Simple UI
+:star: **Понятный интерфейс.** Каждый цвет представляет собой кнопку, при нажатии на которую вы можете поменять его. Нажимаете "Смешать" - все готово!
 
-:star: **All-in-one.** It means HTML-code, page styles and JavaScript code (saying `program data` for usual user) included in one HTML-file. It is very good when you want to make offline copy of ColorMixer.
+:star: **Всё в одном HTML-файле.** Благодаря этому можно загрузить оффлайн-копию программы, которая будет работать даже на телефонах, где при работе с HTML-файлами, имеющих вынесенные в отдельный файл js-скрипты, возникают проблемы с их обнаружением из-за особенностей работы файловой системы.
 
-:star: Result is RGB and HEX-code.
+:star: **Результат в RGB- и HEX-коде.** Очень полезно для разработчиков.
 
-:star: You can set light and dark mode!
+:star: **Поддержка темного режима.** Не нужно менять яркость экрана для комфортной работы в программе.
 
----
-
-**If you face problems while using ColorMixer, then make an issue!**
+# Что-то случилось при работе с программой?
+Создайте запрос в разделе "Issues".
