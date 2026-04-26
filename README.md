@@ -39,7 +39,7 @@
 * **Dark Mode Support.**
 
 # To-do
-* Implement auto-switching of light/dark mode after once selection to prevent constant theme switching. 
+* Add automatic switching between light/dark modes after selection so that the user doesn't have to change it every time.
 
 # Any problems when working with program?
 Make a request in "Issues".
