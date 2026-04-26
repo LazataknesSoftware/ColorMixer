@@ -1,34 +1,38 @@
 [Русский](#преимущества) | [English](#features)
 <a href="#russian"></a>
 # Преимущества
-:star: **Полностью работает в браузере.** Никаких проблем с библиотеками или с путями - всё работает сразу!
 
-:star: **Расположен на GitHub Pages**. Не надо ничего загружать - нужен только браузер!
+* **Полностью работает в браузере.**
 
-:star: **Понятный интерфейс.** Каждый цвет представляет собой кнопку, при нажатии на которую вы можете поменять его. Нажимаете "Смешать" - все готово!
+* **Расположен на GitHub Pages**.
 
-:star: **Всё в одном HTML-файле.** Благодаря этому можно загрузить оффлайн-копию программы, которая будет работать даже на телефонах, где при работе с HTML-файлами, имеющих вынесенные в отдельный файл js-скрипты, возникают проблемы с их обнаружением из-за особенностей работы файловой системы.
+* **Понятный интерфейс.**
 
-:star: **Результат в RGB- и HEX-коде.** Очень полезно для разработчиков.
+* **Всё в одном HTML-файле,** благодаря чему можно загрузить оффлайн-копию программы, которая будет работать даже на телефонах, где при работе с HTML-файлами, имеющих вынесенные в отдельный файл js-скрипты, возникают проблемы с их обнаружением из-за особенностей работы файловой системы.
 
-:star: **Поддержка темного режима.** Не нужно менять яркость экрана для комфортной работы в программе.
+* **Результат в RGB- и HEX-коде,** что очень полезно для разработчиков.
+
+* **Поддержка темного режима.**
 
 # Что-то случилось при работе с программой?
 Создайте запрос в разделе "Issues".
 
+---
+
 <a href="#english"></a>
 # Features
-:star: **Works fully in browser.** No problems with libraries or paths - all works in time!
 
-:star: **It hosted on GitHub Pages**. No downloads - you are need only the browser!
+* **Works fully in browser.**
 
-:star: **Simple UI.** Every color is a button, which changes the color when it's clicked. Click "Mix" and that's all!
+* **It hosted on GitHub Pages**
 
-:star: **All in one HTML.** Thanks to it you can download offline-copy of ColorMixer, which works even on Android, where local HTML files with separate js-scripts don't work properly due to features of mobiles' file system.
+* **Simple UI.**
 
-:star: **RGB and HEX result.** It is very useful for developers.
+* **All in one HTML,** thanks to it you can download offline-copy of ColorMixer, which works even on Android, where local HTML files with separate js-scripts don't work properly due to features of mobiles' file system.
 
-:star: **Dark Mode Support.** You don't need to change brightness of display to use program comfortable.
+* **RGB and HEX result.** It is very useful for developers.
+
+* **Dark Mode Support.**
 
 # Any problems when working with program?
 Make a request in "Issues".
