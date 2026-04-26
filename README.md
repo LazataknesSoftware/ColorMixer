@@ -14,6 +14,10 @@
 
 * **Поддержка темного режима.**
 
+# Что планируется в будущем
+
+* Добавить автоматическое переключение светлого/темного режима после выбора, чтобы пользователю не пришлось каждый раз менять его.
+
 # Что-то случилось при работе с программой?
 Создайте запрос в разделе "Issues".
 
@@ -28,11 +32,14 @@
 
 * **Simple UI.**
 
-* **All in one HTML,** thanks to it you can download offline-copy of ColorMixer, which works even on Android, where local HTML files with separate js-scripts don't work properly due to features of mobiles' file system.
+* **All in one HTML,** thanks to it you can download offline-copy of ColorMixer, which works even on mobiles, where local HTML files with separate js-scripts don't work properly due to features of mobiles' file system.
 
 * **RGB and HEX result.** It is very useful for developers.
 
 * **Dark Mode Support.**
+
+# To-do
+* Implement auto-switching of light/dark mode after once selection to prevent constant theme switching. 
 
 # Any problems when working with program?
 Make a request in "Issues".
