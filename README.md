@@ -28,7 +28,7 @@
 
 * **Works fully in browser.**
 
-* **It hosted on GitHub Pages**
+* **It hosted on GitHub Pages.**
 
 * **Simple UI.**
 
